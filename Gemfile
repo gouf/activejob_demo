@@ -44,6 +44,7 @@ group :development, :test do
 end
 
 
+gem 'slim-rails'
 group :doc do
   gem 'yard'
 end
