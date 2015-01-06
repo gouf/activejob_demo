@@ -44,6 +44,7 @@ group :development, :test do
 end
 
 
+gem 'rb-readline'
 gem 'slim-rails'
 group :doc do
   gem 'yard'
@@ -55,6 +56,8 @@ group :development do
   gem 'guard-rubocop'
   gem 'guard-rspec'
   gem 'guard-rails_best_practices'
+  gem 'pry-rails'
+  gem 'pry-coolline'
 end
 
 group :development, :test do
