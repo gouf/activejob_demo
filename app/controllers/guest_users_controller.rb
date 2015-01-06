@@ -21,6 +21,10 @@ class GuestUsersController < ApplicationController
   end
 
   def partial
+    @guest_users = GuestUser.all
+    render partial: 'guest_list'
+  end
+
   private
 
   def guest_user_params
