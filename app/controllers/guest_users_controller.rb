@@ -1,5 +1,6 @@
 class GuestUsersController < ApplicationController
   def index
+    @guest_users = GuestUser.all
   end
 
   def new
