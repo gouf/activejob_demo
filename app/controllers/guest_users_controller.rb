@@ -14,7 +14,6 @@ class GuestUsersController < ApplicationController
       GuestsCleanupJob.set(wait: 10.seconds).perform_later(@guest_user)
       redirect_to root_path
     else
-      # flash[:notice] = @guest_user.errors.full_messages
       flash[:notice] = @guest_user.errors.full_messages.to_sentence
       redirect_to new_guest_users_path
     end
