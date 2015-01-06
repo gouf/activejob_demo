@@ -2,6 +2,13 @@ Rails.application.routes.draw do
 
   root 'guest_users#index'
 
+  match '/', to: 'guest_users#index', via: :get
+
+  match '/new', to: 'guest_users#new', via: :get
+
+  match '/create', to: 'guest_users#create', via: [:get, :post]
+
+  match '/partial', to: 'guest_users#partial', via: :get
 
   resource :guest_users
 
