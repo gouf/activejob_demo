@@ -11,5 +11,9 @@ class GuestUsersController < ApplicationController
   end
 
   def partial
+  private
+
+  def guest_user_params
+    params.require(:guest_user).permit(:name, :email)
   end
 end
