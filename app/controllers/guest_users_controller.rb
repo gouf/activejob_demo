@@ -4,6 +4,7 @@ class GuestUsersController < ApplicationController
   end
 
   def new
+    @guest_user = GuestUser.new
   end
 
   def create
