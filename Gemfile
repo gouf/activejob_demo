@@ -45,6 +45,7 @@ end
 
 
 gem 'rb-readline'
+gem 'sidekiq'
 gem 'slim-rails'
 group :doc do
   gem 'yard'
