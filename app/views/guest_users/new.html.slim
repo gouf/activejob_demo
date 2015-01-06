@@ -2,3 +2,14 @@ h1
   | GuestUsers#new
 p
   | Find me in app/views/guest_users/new.html.erb
+= form_for(@guest_user, url: {action: 'create'}) do |f|
+  .field
+    = f.label :name
+    br
+    = f.text_field :name
+  .field
+    = f.label :email
+    br
+    = f.text_field :email
+  .actions
+    = f.submit
